@@ -1,0 +1,16 @@
+meta {
+  name: Trigger Product Out Of Stock Event
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/notifications/test/out_of_stock?userId=42&productName=cup
+  body: none
+  auth: inherit
+}
+
+params:query {
+  userId: 42
+  productName: cup
+}

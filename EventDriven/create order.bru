@@ -1,0 +1,16 @@
+meta {
+  name: create order
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/notifications/test/order?userId=42&orderNumber=ORD-98765
+  body: json
+  auth: inherit
+}
+
+params:query {
+  userId: 42
+  orderNumber: ORD-98765
+}
